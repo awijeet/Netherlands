@@ -14,25 +14,6 @@
 
     <%= stylesheet_link_tag "application", :media => "all" %>
 
-    <!-- For third-generation iPad with high-resolution Retina display: -->
-    <!-- Size should be 144 x 144 pixels -->
-    <%= favicon_link_tag 'images/apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
-
-    <!-- For iPhone with high-resolution Retina display: -->
-    <!-- Size should be 114 x 114 pixels -->
-    <%= favicon_link_tag 'images/apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
-
-    <!-- For first- and second-generation iPad: -->
-    <!-- Size should be 72 x 72 pixels -->
-    <%= favicon_link_tag 'images/apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
-
-    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <!-- Size should be 57 x 57 pixels -->
-    <%= favicon_link_tag 'images/apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
-
-    <!-- For all other devices -->
-    <!-- Size should be 32 x 32 pixels -->
-    <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
   </head>
   <body>
 
@@ -47,12 +28,13 @@
           <a class="brand" href="#">Netherlands</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
+                 <li><%= link_to "Railrush", railrush_path  %></li>
               <li><%= link_to "Music and art games paint", music_and_art_games_paint_path  %></li>
               <li><%= link_to "Bunny car", bunny_car_path  %></li>
               <li><%= link_to "Sweep the pumpkin", sweep_the_pumpkin_path  %></li>
               <li><%= link_to "Gold fishing", gold_fishing_path  %></li>
               <li><%= link_to "Bunny car", bunny_car_path  %></li>
-              <li><%= link_to "Railrush", railrush_path  %></li>
+             
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -69,12 +51,13 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
+                                <li><%= link_to "Railrush", railrush_path  %></li>
                 <li><%= link_to "Music and art games paint", music_and_art_games_paint_path  %></li>
                 <li><%= link_to "Bunny car", bunny_car_path  %></li>
                 <li><%= link_to "Sweep the pumpkin", sweep_the_pumpkin_path  %></li>
                 <li><%= link_to "Gold fishing", gold_fishing_path  %></li>
                 <li><%= link_to "Bunny car", bunny_car_path  %></li>
-                <li><%= link_to "Railrush", railrush_path  %></li>
+
              
             </ul>
           </div><!--/.well -->
